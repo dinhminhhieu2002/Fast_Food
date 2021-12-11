@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+
+</head>
+<body>
+    
+  
+   <!-- header  -->
+   <header class="header">
+
+    <a href="#" class="header__logo"><i class="fas fa-pizza-slice"></i>Fast Food</a>
+
+      <nav class="header__navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#banner">Banner</a>
+        <a href="#dishes">Dishes</a>
+        <a href="#menu">Menu</a>
+        <a href="#service">Service</a>
+        <a href="#review">Review</a>
+        <a href="#blog">Blog</a>
+        <a href="#order">Order</a>
+      </nav>
+
+      <div class="header__icon">
+        <i class="fas fa-bars" id="header__icon-bars"></i>
+        <i class="fas fa-search" id="header__icon-search" title="Tìm Kiếm"></i>
+        <a href="#" class="fas fa-shopping-cart" id="header__icon-shopping-cart" title="Giỏ Hàng"></a>
+        <i class="fas fa-user" id="header__icon-users" title="Login/Sign up"></i>
+        <i class="fas fa-moon" id="theme-btn" title="Sáng/Tối"></i>
+      </div>
+
+       <!-- Thanh Tìm Kiếm -->
+
+      <form action="" class="header__search">
+        <input type="search" class="header__search-box" placeholder="Tìm kiếm">
+        <label for="search-box" class="header__search-label"><i class="fas fa-search"></i></label>
+      </form>
+
+      <!-- Giỏ hàng -->
+
+      <div class="header__shopping">
+        <div class="header__shopping-box">
+          <i class="fas fa-trash"></i>
+          <img src="img/shopping1.jpg" alt="">
+          <div class="header__shopping-content">
+            <h3>Hamburger</h3>
+            <span class="price">150.000 VND</span>
+            <span class="quantity">SL: 1</span>
+          </div>
+        </div>
+
+        <div class="header__shopping-box">
+          <i class="fas fa-trash"></i>
+          <img src="img/shopping2.jpg" alt="">
+          <div class="header__shopping-content">
+            <h3>Pizza</h3>
+            <span class="price">150.000 VND</span>
+            <span class="quantity">SL: 1</span>
+          </div>
+        </div>
+
+        <div class="header__shopping-box">
+          <i class="fas fa-trash"></i>
+          <img src="img/shopping3.jpg" alt="">
+          <div class="header__shopping-content">
+            <h3>Bánh Creep</h3>
+            <span class="price">100.000 VND</span>
+            <span class="quantity">SL: 1</span>
+          </div>
+        </div>
+
+        <div class="header__shopping-box">
+          <i class="fas fa-trash"></i>
+          <img src="img/shopping4.jpg" alt="">
+          <div class="header__shopping-content">
+            <h3>Kem dừa</h3>
+            <span class="price">100.000 VND</span>
+            <span class="quantity">SL: 1</span>
+          </div>
+        </div>
+
+        <div class="total">Tổng tiền: 500.000 VND</div>
+        <a href="#" class="btn">Kiểm tra</a>
+
+      </div>
+
+  </header>
+
+
+  <!-- Khung đăng nhập -->
+
+  <div class="login-container">
+    <i class="fas fa-times" id="login-close"></i>
+      <form action="">
+          <div class="button-login">
+            <div id="button-login-btn"></div>
+            <button type="button" class="toggle-btn">Đăng Nhập</button>
+            <button type="button" class="toggle-btn">Đăng kí</button>
+          </div>
+          <h3>Đăng nhập</h3>
+          <input type="email" class="box" placeholder="Tên đăng nhập/Email/Số điện thoại">
+          <input type="password" class="box" placeholder="Mật khẩu">
+          <input type="submit" value="Đăng nhập" class="btn-login">
+          <div class="login-container__help">
+              <a href="#" class="login-container__help-link">Quên mật khẩu</a>
+              <span class="login-container__help-separate"></span>
+              <a href="#" class="login-container__help-link">Cần trợ giúp?</a>
+          </div>
+          <div class="login-container__social">
+              <div class="social-item facebook">
+                <i class="fab fa-facebook social-icon"></i>
+                <span class="social-text">Đăng nhập bằng Facebook</span>
+              </div>
+
+              <div class="social-item instagram">
+                <i class="fab fa-instagram social-icon"></i>
+                <span class="social-text">Đăng nhập bằng Instagram</span>
+              </div>
+
+              <div class="social-item twitter">
+                <i class="fab fa-twitter social-icon"></i>
+                <span class="social-text">Đăng nhập bằng Twitter</span>
+              </div>
+          </div>
+      </form>
+  </div>
+
+
+  <!-- Home -->
+
+  <section class="home" id="home">
+
+    <div class="swiper home__container">
+
+      <div class="swiper-wrapper wrapper">
+
+        <div class="swiper-slide slide" data-aos="fade-right" data-aos-duration="2000">
+
+          <div class="home__container-content">
+
+            <span>Những món ăn đặc biệt của chúng tôi</span>
+            <h3>Pizza</h3>
+            <p>Món Pizza được làm bởi người đầu bếp Ý. Với hương vị thơm ngon và mùi vị sẽ làm quý khách yêu thích.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+
+          <div class="home__container-img">
+            <img src="img/home-img-3.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="swiper-slide slide">
+
+          <div class="home__container-content">
+
+            <span>Những món ăn đặc biệt của chúng tôi</span>
+            <h3>Gà Đút Lò</h3>
+            <p>Món gà đút gà với hương vị thơm ngon sẽ làm chiều lòng những vị khách khó tính nhất</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+
+          <div class="home__container-img">
+            <img src="img/home-img-2.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="swiper-slide slide">
+
+          <div class="home__container-content">
+
+            <span>Những món ăn đặc biệt của chúng tôi</span>
+            <h3>Hamburger</h3>
+            <p>Món Hamburger là món bánh đặc biệt nhất ở cửa hàng chúng tôi. Với hương vị thịt hun khói kèm theo rau củ sẽ là sự kết hợp tuyệt vời nhất.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+
+          <div class="home__container-img">
+            <img src="img/home-img-5.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="swiper-slide slide" >
+
+          <div class="home__container-content">
+
+            <span>Những món ăn đặc biệt của chúng tôi</span>
+            <h3>Salad</h3>
+            <p>Món salad rau củ được làm từ những nguyên liệu tươi sạch nhất được thu trồng và thu hoạch trong nhà kính.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+
+          <div class="home__container-img">
+            <img src="img/home-img-6.png" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </section>
+
+   <!-- Banner -->
+
+   <section class="banner" id="banner">
+
+    <h2 class="heading" data-aos="zoom-out-up" data-aos-duration="1500">Our <span>Banner</span></h2>
+
+    <div class="banner-row">
+      <div class="banner-row__content">
+        <span>X2 Phô mai và khoai tây chiên !!!</span>
+        <h3>Burger</h3>
+        <p>Coca-cola và các thức uống miễn phí khác...</p>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+
+    <div class="banner-grid">
+      <div class="banner-grid__box">
+        <img src="img/banner-1.png" alt="">
+        <div class="banner-grid__box-content">
+          <span>Món Đặc Biệt</span>
+          <h3>Sale đến 50% đặt món ngay bây giờ!!!</h3>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="banner-grid__box">
+        <img src="img/banner-2.png" alt="">
+        <div class="banner-grid__box-content banner-grid__box--caption">
+          <span>Món Đặc Biệt</span>
+          <h3>Sale đến 50% đặt món ngay bây giờ!!!</h3>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="banner-grid__box">
+        <img src="img/banner-3.png" alt="">
+        <div class="banner-grid__box-content">
+          <span>Món Đặc Biệt</span>
+          <h3>Sale đến 50% đặt món ngay bây giờ!!!</h3>
+          <a href="#" class="btn">Order Now </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Dishes -->
+
+  <section class="dishes" id="dishes">
+
+    <h2 class="heading" data-aos="zoom-out-up" data-aos-duration="1500">Our <span>Dishes</span></h2>
+
+    <div class="dishes__container" data-aos="zoom-in-down" data-aos-duration="2500">
+
+      <div class="dishes__container-box">
+        <img src="img/s-img-1.jpg" alt="" class="dishes__container-img">
+        <div class="dishes__container-content">
+          <img src="img/s-1.png" alt="">
+          <h3>Hamburger</h3>
+          <p>Hamburger là món bánh mì với thịt hun khói, dưa chuột muối, rau salad, cà chua, phô mai, sốt.</p>
+        </div>
+      </div>
+
+      <div class="dishes__container-box">
+        <img src="img/s-img-2.jpg" alt="" class="dishes__container-img">
+        <div class="dishes__container-content">
+          <img src="img/s-2.png" alt="">
+          <h3>Pizza</h3>
+          <p>Pizza là món ăn đặc trưng của ngưới Ý. Là bánh lúa mì Bánh thường có hình tròn nhiều kích cỡ. Mặt trên bánh thường có nhiều loại nguyên liệu khác.</p>
+        </div>
+      </div>
+
+      <div class="dishes__container-box">
+        <img src="img/s-img-3.jpg" alt="" class="dishes__container-img">
+        <div class="dishes__container-content">
+          <img src="img/s-3.png" alt="">
+          <h3>Ice-Cream</h3>
+          <p>Ice-Cream hay kem, là một loại thực phẩm đông lạnh, món ngọt thường dùng làm món ăn nhẹ hoặc món tráng miệng.</p>
+        </div>
+      </div>
+
+      <div class="dishes__container-box">
+        <img src="img/s-img-4.jpg" alt="" class="dishes__container-img">
+        <div class="dishes__container-content">
+          <img src="img/s-4.png" alt="">
+          <h3>Fruit Juice</h3>
+          <p>Nước trái cây được ép từ những trái cây tươi được thu hoạch có chọn lọc. Là thức uống giải khát không thể thiếu trong những bữa ăn ngon.</p>
+        </div>
+      </div>
+
+      <div class="dishes__container-box">
+        <img src="img/s-img-5.jpg" alt="" class="dishes__container-img">
+        <div class="dishes__container-content">
+          <img src="img/s-5.png" alt="">
+          <h3>Sweet Cake</h3>
+          <p>Những loại bánh ngọt bắt mắt của chúng tôi là thiên đường của những người yêu cái ngọt.</p>
+        </div>
+      </div>
+
+      <div class="dishes__container-box">
+        <img src="img/s-img-6.jpg" alt="" class="dishes__container-img">
+        <div class="dishes__container-content">
+          <img src="img/s-6.png" alt="">
+          <h3>Tea & Coffee</h3>
+          <p>Trà và Cà phê được chọn lọc từ những lá trà và những hạt cà phê nguyên chất nhất.</p>
+        </div>
+      </div> 
+
+    </div>
+
+  </section>
+
+   <!-- Menu -->
+
+  <section class="menu-img" id="menu">
+
+    <h2 class="heading">Our <span>Menu</span></h2>
+    <img src="img/menu.jpg" alt="">
+
+  </section>
+
+  <section class="menu">
+
+    <div class="menu__container">
+
+      <div class="menu__container-box">
+        <a><i class="fas fa-heart"></i></a>
+        <img src="img/menu-1.jpg" alt="">
+        <h3>Pizza</h3>
+        <div class="menu__container-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="menu__container-content">
+           <span>50.000 VND</span>
+           <span>100.000 VND</span>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <div class="menu__container-box">
+        <a><i class="fas fa-heart"></i></a>
+        <img src="img/menu-2.jpg" alt="">
+        <h3>Hamburger</h3>
+        <div class="menu__container-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="menu__container-content">
+           <span>50.000 VND</span>
+           <span>100.000 VND</span>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <div class="menu__container-box">
+        <a><i class="fas fa-heart"></i></a>
+        <img src="img/menu-3.jpg" alt="">
+        <h3>Hot Dog</h3>
+        <div class="menu__container-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="menu__container-content">
+           <span>50.000 VND</span>
+           <span>100.000 VND</span>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <div class="menu__container-box">
+        <a><i class="fas fa-heart"></i></a>
+        <img src="img/menu-4.jpg" alt="">
+        <h3>Khoai Tây Chiên</h3>
+        <div class="menu__container-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="menu__container-content">
+           <span>50.000 VND</span>
+           <span>100.000 VND</span>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <div class="menu__container-box">
+        <a><i class="fas fa-heart"></i></a>
+        <img src="img/menu-5.jpg" alt="">
+        <h3>Bánh Mì Xúc Xích</h3>
+        <div class="menu__container-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="menu__container-content">
+           <span>50.000 VND</span>
+           <span>100.000 VND</span>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <div class="menu__container-box">
+        <a><i class="fas fa-heart"></i></a>
+        <img src="img/menu-6.jpg" alt="">
+        <h3>Bánh Kem Dừa</h3>
+        <div class="menu__container-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="menu__container-content">
+           <span>50.000 VND</span>
+           <span>100.000 VND</span>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <div class="menu__container-box">
+        <a><i class="fas fa-heart"></i></a>
+        <img src="img/menu-7.jpg" alt="">
+        <h3>Bánh Creep</h3>
+        <div class="menu__container-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="menu__container-content">
+           <span>50.000 VND</span>
+           <span>100.000 VND</span>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <div class="menu__container-box">
+        <a><i class="fas fa-heart"></i></a>
+        <img src="img/menu-8.jpg" alt="">
+        <h3>Nước ép trái cây</h3>
+        <div class="menu__container-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="menu__container-content">
+           <span>50.000 VND</span>
+           <span>100.000 VND</span>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <div class="menu__container-box">
+        <a><i class="fas fa-heart"></i></a>
+        <img src="img/menu-9.jpg" alt="">
+        <h3>Bánh Donut  </h3>
+        <div class="menu__container-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="menu__container-content">
+           <span>50.000 VND</span>
+           <span>100.000 VND</span>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+    </div>
+
+  </section>
+
+   <!-- Service -->
+
+   <section class="service" id="service">
+
+    <h2 class="heading" data-aos="fade-down" data-aos-duration="1000">Our <span>Service</span></h2>
+    <div class="service__container" data-aos="zoom-in-down" data-aos-duration="1500">
+
+      <div class="service__container-box">
+        <img src="img/feature-img-1.png" alt="">
+        <h3>An toàn</h3>
+        <p>Thực phẩm ở nhà hàng của chúng tôi được chứng nhận an toàn vệ sinh thực phẩm. Từ khâu chế biến đến khi đến tay thực khách đều được kiểm định nghiêm ngặt.</p>
+        <a href="#" class="btn">Tìm hiểu thêm</a>
+      </div>
+
+      <div class="service__container-box">
+        <img src="img/feature-img-2.png" alt="">
+        <h3>Giao hàng nhanh</h3>
+        <p>Giao hàng nhanh, miễn phí, tiết kiệm, Nhanh chóng liên hệ khi nhận được đơn hàng, Chấp nhận các phương thức thanh toán như COD ( miễn phí COD trên toàn quốc).</p>
+        <a href="#" class="btn">Tìm hiểu thêm</a>
+      </div>
+
+      <div class="service__container-box">
+        <img src="img/feature-img-3.png" alt="">
+        <h3>Thanh toán dễ dàng</h3>
+        <p>Thanh toán nhanh chóng dễ dàng qua app, thanh toán qua thẻ, internet banking, thanh toán trực tiếp,  chuyển khoản, momo, vettelpay và các phương thức thanh toán online khác.</p>
+        <a href="#" class="btn">Tìm hiểu thêm</a>
+      </div>
+
+    </div>
+
+  </section>
+
+   <!-- Review -->
+
+   <section class="review" id="review">
+
+    <h3 class="heading">Customer's<span>Review</span></h3>
+    <div class="swiper review__container">
+
+      <div class="swiper-wrapper wrapper">
+
+        <div class="swiper-slide slide">
+          <img src="img/pic-6.jpg" alt="">
+          <p>Sở hữu thực đơn đa dạng, Fast Food từ lâu đã trở thành chuỗi đồ ăn ngon ngon nổi danh ở Sài Gòn. Với đủ các món thật sự là thiên đường cho người yêu ẩm thực và các food blogers.</p>
+          <h3>Minh Hiếu</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="img/pic-1.jpg" alt="">
+          <p>Sở hữu thực đơn đa dạng, Fast Food từ lâu đã trở thành chuỗi đồ ăn ngon ngon nổi danh ở Sài Gòn. Với đủ các món thật sự là thiên đường cho người yêu ẩm thực và các food blogers.</p>
+          <h3>Lê Đạt</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="img/pic-6.jpg" alt="">
+          <p>Sở hữu thực đơn đa dạng, Fast Food từ lâu đã trở thành chuỗi đồ ăn ngon ngon nổi danh ở Sài Gòn. Với đủ các món thật sự là thiên đường cho người yêu ẩm thực và các food blogers.</p>
+          <h3>Minh Hiếu</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="img/pic-2.jpg" alt="">
+          <p>Sở hữu thực đơn đa dạng, Fast Food từ lâu đã trở thành chuỗi đồ ăn ngon ngon nổi danh ở Sài Gòn. Với đủ các món thật sự là thiên đường cho người yêu ẩm thực và các food blogers.</p>
+          <h3>Lê Đạt</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+    <!-- Blog -->
+
+    <section class="blog" id="blog">
+
+      <h2 class="heading">Our <span>Blog</span></h2>
+
+      <div class="blog__container">
+
+        <div class="blog__container-box">
+          <img src="img/blog-1.jpg" alt="">
+          <div class="blog__container-content">
+            <div class="blog__container-icon">
+              <a href="#"><i class="fas fa-user"></i>By Admin</a>
+              <a href="#"><i class="fas fa-calendar-week"></i>2 ngày trước</a>
+            </div>
+            <hr>
+            <h3>Chiếc Hamburger nóng hổi khởi đầu ngày mới tràn đầy năng lượng.</h3>
+            <p>Nếu bạn ở quận 5, chắc hẳn chuỗi cửa hàng đồ ăn nhanh Fast Food không còn quá xa lạ.</p>
+            <a href="#" class="btn">Đọc Thêm</a>
+          </div>
+        </div>
+
+        <div class="blog__container-box">
+          <img src="img/blog-2.jpg" alt="">
+          <div class="blog__container-content">
+            <div class="blog__container-icon">
+              <a href="#"><i class="fas fa-user"></i>By Admin</a>
+              <a href="#"><i class="fas fa-calendar-week"></i>2 ngày trước</a>
+            </div>
+            <hr>
+            <h3>Chiếc Hamburger nóng hổi khởi đầu ngày mới tràn đầy năng lượng.</h3>
+            <p>Nếu bạn ở quận 5, chắc hẳn chuỗi cửa hàng đồ ăn nhanh Fast Food không còn quá xa lạ.</p>
+            <a href="#" class="btn">Đọc Thêm</a>
+          </div>
+        </div>
+
+        <div class="blog__container-box">
+          <img src="img/blog-3.jpg" alt="">
+          <div class="blog__container-content">
+            <div class="blog__container-icon">
+              <a href="#"><i class="fas fa-user"></i>By Admin</a>
+              <a href="#"><i class="fas fa-calendar-week"></i>2 ngày trước</a>
+            </div>
+            <hr>
+            <h3>Chiếc Hamburger nóng hổi khởi đầu ngày mới tràn đầy năng lượng.</h3>
+            <p>Nếu bạn ở quận 5, chắc hẳn chuỗi cửa hàng đồ ăn nhanh Fast Food không còn quá xa lạ.</p>
+            <a href="#" class="btn">Đọc Thêm</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  <!-- Order -->
+
+  <section class="order" id="order">
+
+    <h3 class="heading">Order<span>Now</span></h3>
+
+    <div class="icon-order__container">
+
+     <div class="icon-order__container-content">
+      <img src="img/icon-1.png" alt="">
+      <h3>7:30 sáng  -- 10:30 tối</h3>
+     </div>
+
+     <div class="icon-order__container-content">
+      <img src="img/icon-2.png" alt="">
+      <h3>+123-456-789</h3>
+     </div>
+
+     <div class="icon-order__container-content">
+      <img src="img/icon-3.png" alt="">
+      <h3>Gò Vấp, Tp Hồ Chí Minh, Việt Nam</h3>
+     </div>
+
+    </div>
+
+    <div class="order__container">
+
+      <div class="order__container-img">
+        <img src="img/order.png" alt="">
+      </div>
+  
+      <form action="">
+  
+        <div class="order__container-input">
+          <input type="text" placeholder="Họ tên">
+          <input type="email" placeholder="email">
+        </div>
+  
+        <div class="order__container-input">
+          <input type="number" placeholder="Số điện thoại">
+          <input type="text" placeholder="Tên thức ăn">
+        </div>
+  
+        <textarea name="" placeholder="Địa chỉ kèm ghi chú" id="" cols="30" rows="10"></textarea>
+  
+        <input type="submit" value="Order Now" class="btn">
+  
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <section class="footer">
+
+    <div class="footer__container">
+
+      <div class="footer__container-box">
+        <h3><i class="fas fa-pizza-slice"></i>Fast Food</h3>
+        <p>Hãy đến với chuỗi cửa hàng thức ăn nhanh. Bạn sẽ tải nghiệm những điều tuyệt vời nhất.</p>
+        <div class="footer__container-social">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-youtube"></a>
+        </div>
+      </div>
+
+      <div class="footer__container-box">
+        <h3>Liên hệ</h3>
+        <a href="#" class="footer__container-link"><i class="fas fa-phone"></i>+812-878-211</a>
+        <a href="#" class="footer__container-link"><i class="fas fa-phone"></i>+386-690-205</a>
+        <a href="#" class="footer__container-link"><i class="fas fa-envelope"></i>fastfood@gmail.com</a>
+        <a href="#" class="footer__container-link"><i class="fas fa-map-marker-alt"></i>Tp Hồ Chí Minh, Việt Nam</a>
+      </div>
+
+      <div class="footer__container-box">
+        <h3>Liên kết</h3>
+        <a href="#home" class="footer__container-link">Home</a>
+        <a href="#dishes" class="footer__container-link">Dishes</a>
+        <a href="#service" class="footer__container-link">Service</a>
+        <a href="#menu" class="footer__container-link">Menu</a>
+        <a href="#blog" class="footer__container-link">Blog</a>
+        <a href="#review" class="footer__container-link">Review</a>
+      </div>
+
+      <div class="footer__container-box">
+        <h3>Email</h3>
+        <input type="text" placeholder="email" class="footer__container-email">
+        <input type="submit" value="send" class="btn">
+        <img src="img/payment.png" alt="" class="footer__container-payment">
+      </div>
+
+      <div class="footer__container-box">
+        <h3>App</h3>
+        <div class="footer__container-app">
+          <img src="img/app1.png" alt="">
+          <img src="img/app2.png" alt="">
+          <img src="img/movil-app.png" alt="" class="footer__container-mobileapp">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- loader -->
+
+   <div class="loader__container">
+    <img src="img/loader.gif" alt="">
+  </div>
+
+  <!-- Scroll Top -->
+
+  <a href="#" class="scrolltop" id="scrolltop">
+    <i class="fas fa-chevron-up scrolltop__icon" title="Quay về đầu trang"></i>
+  </a>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
